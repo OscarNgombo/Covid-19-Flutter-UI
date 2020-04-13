@@ -28,7 +28,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: SingleChildScrollView(
+        child: Column(
         children: <Widget>[
           MyHeader(
             image: "assets/icons/Drcorona.svg",
@@ -180,6 +181,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ),
         ],
+      ),
       ),
     );
   }
